@@ -140,3 +140,55 @@ console.log("%c迴圈","color:gold");
 for (let index = 0; index < 10; index++) {
     console.log("迴圈", index);
 }
+
+// 變數
+let letCount = 1;
+letCount = 2;
+// 常數(不可變的數值)
+const constCount = 1;
+// constCount = 2; //產生錯誤 原因:常數不可改變
+
+// 不可重新定義
+// let letCount = 10; //產生錯誤 原因:重複宣告
+// const constCount = 10; //產生錯誤 原因:重複宣告
+
+//常數命名習慣會使用全大寫並使用底線區隔
+const PI = 3.14;
+const WEB_FONT_SIZE = 24;
+
+//變數 var (variable)
+var varCount = 1;
+varCount = 123;
+var varCount = 3; // 可以重複宣告
+console.log(varCount);
+
+// 作用域 Scope {}
+// 代表程式作用的範圍(通常指大括號)
+// let 與 const 的作用域都在 {} 區塊內
+{
+    let letTest = 1;
+    const constTest = 1;
+    var varTest = 1;
+    console.log('let:', letTest);
+    console.log('const:', constTest);
+    console.log('var:', varTest);
+}
+
+// console.log("let:", letTest); // 錯誤:超出作用域
+// console.log("const:", constTest); // 錯誤:超出作用域
+console.log("var:", varTest);
+
+console.log("%cfunction 函式、方法或功能","color: gold");
+// 函式語法
+
+// function 函式名稱 () { }
+function logLine(){
+    console.log("%c----我是分隔線----","color:gold");
+}
+
+// 函是需要被呼叫:函式名稱()
+logLine()
+logLine()
+logLine()
+logLine()
+logLine()
